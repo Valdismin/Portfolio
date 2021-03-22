@@ -1,0 +1,23 @@
+@import '../common/styles/scss/variables';
+.footerBlock{
+    height: 100%;
+    background-color: $secondBackgroundColor;
+    .footerContainer{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        color: $primaryTextColor;
+        .footerLinks{
+            display:flex;
+            justify-content: space-around;
+            height: 20px;
+            width: 300px;
+            color: $primaryTextColor;
+        }
+    }
+}
+
+
+

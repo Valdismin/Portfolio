@@ -1,0 +1,68 @@
+@import '../../common/styles/scss/variables';
+.project {
+  width: 500px;
+  background-color: $secondBackgroundColor;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .projectInfo {
+    .projectTitle {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      line-height: 1.2;
+      color: $primaryTextColor;
+      margin: 1.5rem 0;
+      font-size: 1.3rem;
+    }
+
+    .discription {
+      margin: 0 0 1.5rem 0;
+      line-height: 1.5;
+      font-weight: 40;
+      font-size: 1rem;
+      text-align: center !important;
+      color: $secondTextColor;
+      width: 100%;
+      white-space: pre-wrap;
+    }
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    background-color: $secondBackgroundColor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .button {
+      background-color: #dee3e6;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1;
+      color:$secondTextColor
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $backgroundColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+  }
+}
+
+
+
+
+
+
+

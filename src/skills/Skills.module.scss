@@ -1,0 +1,51 @@
+@import '../common/styles/scss/variables';
+
+.skillsBlock {
+  background-color: $backgroundColor;
+  position: relative;
+  padding-bottom: 130px;
+  padding-top: 70px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: $pseudoElementColor;
+    width: 5px;
+    height: 100px;
+    bottom: -50px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    border-bottom: 1px dashed $pseudoElementColor;
+  }
+
+  .skillsContainer {
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .skills {
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 874px) {
+
+        justify-content: center;
+
+      }
+    }
+  }
+}
+
+
+
+
+
+

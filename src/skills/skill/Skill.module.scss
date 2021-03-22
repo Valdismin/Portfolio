@@ -1,0 +1,38 @@
+@import '../../common/styles/scss/variables';
+
+.skill{
+    width: 350px;
+    background-color: $secondBackgroundColor;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+    }
+    .skillTitle{
+        font-family: 'Poppins', sans-serif ;
+        font-weight: 600;
+        line-height: 1.2;
+        color:$primaryTextColor;
+        margin: 1.5rem 0;
+        font-size: 1.3rem;
+    }
+    .discription{
+        margin: 0 0 1.5rem 0;
+        line-height: 1.5;
+        font-weight: 40;
+        font-size: 1rem;
+        text-align: center!important;
+        color:$secondTextColor;
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+@import '../common/styles/scss/variables';
+
+.contactBlock{
+    max-height: 100vh;
+    background-color: $backgroundColor;
+    .contactContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .formBlock{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid;
+            width: 100%;
+            align-items: center;
+            background-color: $backgroundColor;
+            padding-top: 30px;
+            .input{
+                margin: 10px 0;
+                height: 50px;
+                background: no-repeat;
+                box-shadow: none;
+                padding: 10px 15px;
+                border-color: $secondTextColor;
+                border-width: 1px;
+                border-radius: 2px;
+                line-height: 1.2;
+                min-width: 60%;
+                max-width: 100%;
+            }
+            .button{
+                height: 50px;
+                width: 100px;
+                color:$primaryTextColor;
+                padding: 10px 25px;
+                background-color: $pseudoElementColor;
+
+                border-radius: 2px;
+                font-weight: 400;
+            }
+            @media screen and (max-width: 650px) {
+                .formBlock{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+

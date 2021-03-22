@@ -1,0 +1,17 @@
+@import '../common/styles/scss/variables';
+
+.nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 1rem;
+  padding-left: 1rem;
+    .a {
+        color: $primaryTextColor !important;
+        text-decoration: none
+    }
+
+}
+
