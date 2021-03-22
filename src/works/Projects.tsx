@@ -15,7 +15,7 @@ export function Projects() {
         backgroundImage:`url(${Todo})`
     }
     return (
-        <div className={s.projectsBlock}>
+        <div id="projects" className={s.projectsBlock}>
             <div className={`${c.container} ${s.projectsContainer}`}>
                 <Title text={"Projects"}/>
                 <div className={s.projects}>

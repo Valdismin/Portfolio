@@ -6,7 +6,7 @@ import {Title} from "../common/components/title/Title";
 
 export function Skills() {
     return (
-        <div className={s.skillsBlock}>
+        <div id="skills" className={s.skillsBlock}>
             <div className={`${c.container} ${s.skillsContainer}`}>
                 <Title text={"Skills"}/>
                 <div className={s.skills}>

@@ -1,17 +1,34 @@
 @import '../common/styles/scss/variables';
 
 .nav {
-  width: 300px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
   font-weight: 600;
-  padding-right: 1rem;
-  padding-left: 1rem;
-    .a {
-        color: $primaryTextColor !important;
-        text-decoration: none
-    }
+  padding: 10px;
+  margin: 10px;
+  color: $primaryTextColor !important;
+  font-family: "Merriweather Sans";
+  border: 1px double $pseudoElementColor;
+  cursor: pointer;
+  z-index: 2;
+  @media screen and (max-width: 874px) {
+    justify-content: space-between;
+    width:80%
+  }
+
+  &>*:hover {
+    text-decoration: overline;
+    color: $pseudoElementColor;
+  }
+  .active {
+    color: $pseudoElementColor !important;
+  }
 
 }
+
+
+
+
 

@@ -6,13 +6,15 @@ import Photo from './../assets/images/photo.jpg'
 export function MainBlock() {
 
     return (
-        <div className={s.mainBlock}>
+        <div id="main" className={s.mainBlock}>
             <div className={c.container}>
+                <div className={s.text_photo}>
                 <div className={s.text}>
-                    <h1>Hi there! <br/> I'm Vlad Kozlovski</h1>
-                    <p>I'm Frontend Developer from Minsk</p>
+                    <p>Front-end Developer</p>
+                    <h1>Kozlovski Vlad</h1>
                 </div>
                 <img className={s.photo} src={Photo}/>
+                </div>
             </div>
         </div>
     );

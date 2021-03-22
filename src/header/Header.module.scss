@@ -4,6 +4,12 @@
     height: 80px;
     background-color: $backgroundColor;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 999;
+    @media screen and (max-width: 874px) {
+        justify-content: center;
+    }
 }

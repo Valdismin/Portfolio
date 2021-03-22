@@ -3,43 +3,29 @@
 .mainBlock {
   background-color: $backgroundColor;
   padding: 130px 0px 130px 0px;
-  position: relative;
+  .text_photo {
+    display: flex;
+    justify-content: space-between;
 
-  &::after {
-    content: '';
-    position: absolute;
-    background: $pseudoElementColor;
-    width: 5px;
-    height: 100px;
-    bottom: -50px;
-  }
 
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    top: 100%;
-    right: 0;
-    width: 50%;
-    border-bottom: 1px dashed $pseudoElementColor;
-  }
 
-  .text {
-    width: 300px;
-    height: 60vh;
-    background-color: $backgroundColor;
-    color: $pseudoElementColor;
-    font-size: 2rem;
-    font-family: 'Gilroy', sans-serif;
-    line-height: 1.2;
-    font-weight: 900;
-    padding-botto: 50px;
-  }
+    .text {
+      width: 300px;
+      height: 400px;
+      background-color: $backgroundColor;
+      color: $pseudoElementColor;
+      font-size: 2rem;
+      font-family: 'Gilroy', sans-serif;
+      line-height: 1.2;
+      font-weight: 900;
+      padding-bottom: 50px;
+    }
 
-  .photo {
-    width: 300px;
-    height: 400px;
-    background-color: aquamarine;
+    .photo {
+      width: 300px;
+      height: 400px;
+      background-color: aquamarine;
+    }
   }
 }
 

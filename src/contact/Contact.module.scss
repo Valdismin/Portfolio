@@ -1,7 +1,7 @@
 @import '../common/styles/scss/variables';
 
 .contactBlock{
-    max-height: 100vh;
+    min-height: 100vh;
     background-color: $backgroundColor;
     .contactContainer{
         display: flex;
@@ -27,16 +27,19 @@
                 line-height: 1.2;
                 min-width: 60%;
                 max-width: 100%;
+                color: white;
             }
             .button{
                 height: 50px;
                 width: 100px;
                 color:$primaryTextColor;
-                padding: 10px 25px;
+                padding: 20px;
                 background-color: $pseudoElementColor;
-
-                border-radius: 2px;
+                border-radius: 10px;
                 font-weight: 400;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             @media screen and (max-width: 650px) {
                 .formBlock{
