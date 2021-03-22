@@ -2,9 +2,10 @@
 
 .header{
     height: 80px;
+    width: 100%;
     background-color: $backgroundColor;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     position: fixed;
     opacity: 0.8;

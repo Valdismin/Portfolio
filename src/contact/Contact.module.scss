@@ -3,6 +3,9 @@
 .contactBlock{
     min-height: 100vh;
     background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .contactContainer{
         display: flex;
         flex-direction: column;

@@ -20,14 +20,19 @@
         margin: 1.5rem 0;
         font-size: 1.3rem;
     }
-    .discription{
+    .discription {
         margin: 0 0 1.5rem 0;
         line-height: 1.5;
+        font-family: "Merriweather Sans";
         font-weight: 40;
         font-size: 1rem;
-        text-align: center!important;
-        color:$secondTextColor;
+        text-align: center !important;
+        color: $secondTextColor;
         flex-wrap: nowrap;
+    }
+    .image{
+        height: 190px;
+        width: 190px;
     }
 }
 
