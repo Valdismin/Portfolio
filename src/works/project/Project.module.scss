@@ -41,11 +41,13 @@
     position: relative;
 
     .button {
-      background-color: #dee3e6;
+      background-color: black;
       padding: 10px 20px;
       position: relative;
       z-index: 1;
-      color:$secondTextColor
+      opacity: 0.8;
+      color:$secondTextColor;
+      text-decoration: none;
     }
   }
 }

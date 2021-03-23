@@ -5,6 +5,7 @@ type projectPropsType = {
     title: string
     discription: string
     style:{ backgroundImage: string; }
+    href:string
 }
 
 export function Project(props: projectPropsType) {
@@ -15,7 +16,7 @@ export function Project(props: projectPropsType) {
                 <p className={p.discription}>{props.discription}</p>
             </div>
             <div className={p.icon} style={props.style}>
-                <button className={p.button}>Смотреть</button>
+                <a className={p.button} target='_blank' href={props.href}>View more</a>
             </div>
         </div>
     );
