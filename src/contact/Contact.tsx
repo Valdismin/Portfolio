@@ -17,7 +17,7 @@ export function ContactBlock() {
         initialValues: {
             name: '',
             email: '',
-            message:''
+            message: ''
         },
         validate: (values) => {
             const errors: FormikErrorType = {};
@@ -28,18 +28,19 @@ export function ContactBlock() {
             }
             if (!values.name) {
                 errors.name = "Please,enter your name"
-            }else if (values.name.length < 2  ) {
+            } else if (values.name.length < 2) {
                 errors.name = "Please, enter your full name"
             }
             return errors;
         },
-        onSubmit: (values) => {}
+        onSubmit: (values) => {
+        }
     })
     //@ts-ignore
     const sendEmail = (e) => {
         setSend(true)
         e.preventDefault()
-        emailjs.sendForm('service_sxulrj3', 'template_m1rzjzq', e.target,'user_odufobvmBnlnSn58cvJrB')
+        emailjs.sendForm('service_sxulrj3', 'template_m1rzjzq', e.target, 'user_odufobvmBnlnSn58cvJrB')
             .then((result) => {
                 console.log(result.text)
             }, (error) => {
@@ -55,19 +56,22 @@ export function ContactBlock() {
         }
     }
 
-        return <div id="contacts" className={s.contactBlock}>
-            <div className={`${c.container} ${s.contactContainer}`}>
-                <Title text={"Contacts"}/>
-                <form className={s.formBlock} onSubmit={sendEmail}>
-                    <input id="name" className={s.input} type={"text"} placeholder={"Name"} {...formik.getFieldProps('name')}/>
-                    {formik.touched.name &&
-                    formik.errors.name ? <div style={{color: "red"}}>{formik.errors.name}</div> : null}
-                    <input id="email" className={s.input} type={"text"} placeholder={"Email"} {...formik.getFieldProps('email')}/>
-                    {formik.touched.email &&
-                    formik.errors.email ? <div style={{color: "red"}}>{formik.errors.email}</div> : null}
-                    <input id="message" className={s.input} placeholder={"Напишите ваше сообщение"} {...formik.getFieldProps('message')}></input>
-                    <button type={"submit"} className={s.button}>Submit</button>
-                </form>
-            </div>
+    return <div id="contacts" className={s.contactBlock}>
+        <div className={`${c.container} ${s.contactContainer}`}>
+            <Title text={"Contacts"}/>
+            <form className={s.formBlock} onSubmit={sendEmail}>
+                <input id="name" className={s.input} type={"text"}
+                       placeholder={"Name"} {...formik.getFieldProps('name')}/>
+                {formik.touched.name &&
+                formik.errors.name ? <div style={{color: "red"}}>{formik.errors.name}</div> : null}
+                <input id="email" className={s.input} type={"text"}
+                       placeholder={"Email"} {...formik.getFieldProps('email')}/>
+                {formik.touched.email &&
+                formik.errors.email ? <div style={{color: "red"}}>{formik.errors.email}</div> : null}
+                <input id="message" className={s.input}
+                       placeholder={"Напишите ваше сообщение"} {...formik.getFieldProps('message')}/>
+                <button type={"submit"} className={s.button}>Submit</button>
+            </form>
         </div>
+    </div>
 }

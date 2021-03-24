@@ -4,6 +4,7 @@ import c from './../common/styles/Container.module.css';
 import Photo from './../assets/images/photo.jpg'
 import Particles from 'react-particles-js';
 import Fade from 'react-awesome-reveal';
+import ReactTypingEffect from 'react-typing-effect';
 
 
 
@@ -42,7 +43,8 @@ export function MainBlock() {
             <div className={c.container}>
                 <div className={s.text_photo}>
                 <div className={s.text}>
-                    <p>Frontend Developer</p>
+
+                    <p><ReactTypingEffect text={['Front-end developer']} eraseSpeed={0} typingDelay={1000}/></p>
                     <h1>Kozlovski Vlad</h1>
                 </div>
                 <img className={s.photo} src={Photo}/>
