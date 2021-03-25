@@ -44,8 +44,8 @@ export function MainBlock() {
                 <div className={s.text_photo}>
                 <div className={s.text}>
 
-                    <p><ReactTypingEffect text={['Front-end developer']} eraseSpeed={0} typingDelay={1000}/></p>
-                    <h1>Kozlovski Vlad</h1>
+                    <p><ReactTypingEffect text={['Front-end developer']} cursor="_" eraseSpeed={0} typingDelay={1000}/></p>
+                    <h1>Kozlovski Vladislav</h1>
                 </div>
                 <img className={s.photo} src={Photo}/>
                 </div>

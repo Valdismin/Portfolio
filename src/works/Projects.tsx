@@ -23,9 +23,10 @@ export function Projects() {
             <div className={`${c.container} ${s.projectsContainer}`}>
                 <Title text={"Projects"}/>
                 <div className={s.projects}>
-                    <Project href={""} style={social} title="Social Network" discription="Technologies: React, Redux, Formik, REST API, Typescript, CSS-Modules"/>
-                    <Project href={""} style={todolist} title="TODOLIST" discription="Technologies:React, Redux, REST API, Typescript, Formik, Material-UI, Storybook, Unit-tests"/>
+                    <Project href={"https://valdismin.github.io/social_network/"} style={social} title="Social Network" discription="Technologies: React, Redux, Formik, REST API, Typescript, CSS-Modules"/>
+                    <Project href={"https://valdismin.github.io/todolist/#/"} style={todolist} title="TODOLIST" discription="Technologies:React, Redux, REST API, Typescript, Formik, Material-UI, Storybook, Unit-tests"/>
                     <Project href={"https://valdismin.github.io/Ignat_DZ/#/PRE_JUNIOR"} style={tasks} title="Tasks" discription="Technologies:React,Hooks, Typescript, Material-UI, Unit-tests"/>
+                    <Project href={"https://valdismin.github.io/Counter/"} style={tasks} title="Counter" discription="Technologies:React,Redux,Hooks, Typescript, , Unit-tests"/>
                 </div>
             </div>
         </div>
