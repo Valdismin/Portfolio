@@ -1,36 +1,55 @@
 @import '../common/styles/scss/variables';
-.aboutMeBlock{
-    min-height: 60vh;
-    background-color: $backgroundColor;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .aboutMeContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .information{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: $pseudoElementColor;
-            &>ul{
-                list-style: none;
-                text-align: left;
-                padding: 0px 85px;
-                line-height: 1.2;
-                font-size: 1.3rem;
-                &>li{
-                    margin-top: 10px;
-                    &>span{
-                        font-weight: 600;
-                    }
-                }
-            }
-        }
-    }
 
+.aboutMeBlock {
+  min-height: 60vh;
+  background-color: $backgroundColor;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .information {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $pseudoElementColor;
+
+      & > ul {
+        list-style: none;
+        text-align: left;
+        padding: 0px 85px;
+        line-height: 1.2;
+        font-size: 1.3rem;
+
+        & > li {
+          margin-top: 10px;
+
+          & > span {
+            font-weight: 600;
+          }
+        }
+      }
+
+
+      @media screen and (max-width: 874px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+          & > ul {
+              padding: 0px 0px;
+              }
+      }
+
+    }
+  }
 }
+
+
 
 
 
