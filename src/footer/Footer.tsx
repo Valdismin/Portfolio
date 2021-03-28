@@ -28,7 +28,7 @@ export function FooterBlock() {
                                                                           size={'2x'}
                                                                           color="#ADFF2F"/></a>
             </div>
-            <div className={s.allRights}>© 2021 Все права защищены.</div>
+            <div className={s.allRights}>© 2021 All rights reserved.</div>
         </div>
     </div>
 }
